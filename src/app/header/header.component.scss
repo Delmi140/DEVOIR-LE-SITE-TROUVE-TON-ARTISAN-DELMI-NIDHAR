@@ -1,4 +1,16 @@
+@font-face {
+    font-family: "Graphik";
+    src:
+      local("Tri"),
+      url("../../font/graphik-regular-trial.otf") format("truetype") tech(color-COLRv1),
+      
+  }
+
 .image-logo{
     height: 100px;
     width: 100px;
+}
+
+a{
+    font-family: "Graphik";
 }
