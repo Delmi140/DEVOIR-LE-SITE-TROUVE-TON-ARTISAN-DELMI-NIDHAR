@@ -16,9 +16,47 @@
             <div>
                 <h2>Les trois artisans du mois avec pour chacun :</h2>
             </div>
-            <div>
-                <p *ngFor="let product of data">{{product.name}}</p>
+            <div class=" row justify-content-center ">
+                <div class="card col-md-6 col-lg-4 mb" >
+                    <div class="card-body">
+                      <h5 *ngIf="this.data">{{this.data[8].name}}</h5>
+                      <p *ngIf="this.data">Note : {{this.data[8].note}}</p>
+                      <p *ngIf="this.data">Spécialité : {{this.data[8].specialty}}</p>
+                      <p *ngIf="this.data">Localisation : {{this.data[8].location}}</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card col-md-6 col-lg-4 mb" >
+                    <div class="card-body">
+                        <h5 *ngIf="this.data">{{this.data[15].name}}</h5>
+                        <p *ngIf="this.data">Note : {{this.data[15].note}}</p>
+                        <p *ngIf="this.data">Spécialité : {{this.data[15].specialty}}</p>
+                        <p *ngIf="this.data">Localisation : {{this.data[15].location}}</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card col-md-6 col-lg-4 mb" >
+                    <div class="card-body">
+                        <h5 *ngIf="this.data">{{this.data[3].name}}</h5>
+                        <p *ngIf="this.data">Note : {{this.data[3].note}}</p>
+                        <div class="star-container">
+                            <div class="star-wrapper">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+
+                            </div>
+
+                        </div>
+                        <p *ngIf="this.data">Spécialité : {{this.data[3].specialty}}</p>
+                        <p *ngIf="this.data">Localisation : {{this.data[3].location}}</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
             </div>
+            
             
         </div>
     </div>

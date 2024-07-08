@@ -22,3 +22,20 @@ h2{
 li{
     font-family: "Graphik";
 }
+.card{
+    margin: 20px;
+    width: 400px;
+}
+
+.star-container{
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+i{width: 25px;}
+
+.star-wrapper{
+    width: 125px;
+    cursor: pointer;
+}

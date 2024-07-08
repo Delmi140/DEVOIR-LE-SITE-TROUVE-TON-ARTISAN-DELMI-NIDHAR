@@ -4,9 +4,39 @@
         <div>
             <h2>Catégorie Alimentation</h2>
         </div>
-        <div>
-            <p *ngFor="let product of data">{{product.name}}</p>
-
+        <div class=" row justify-content-center ">
+            <div class="card col-md-6 col-lg-4 mb" >
+                <div class="card-body">
+                  <h5 *ngIf="this.data">{{this.data[3].name}}</h5>
+                  <p *ngIf="this.data">Note : {{this.data[3].note}}</p>
+                  <p *ngIf="this.data">Spécialité : {{this.data[3].specialty}}</p>
+                  <p *ngIf="this.data">Localisation : {{this.data[3].location}}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-md-6 col-lg-4 mb" >
+                <div class="card-body">
+                    <h5 *ngIf="this.data">{{this.data[9].name}}</h5>
+                    <p *ngIf="this.data">Note : {{this.data[9].note}}</p>
+                    <p *ngIf="this.data">Spécialité : {{this.data[9].specialty}}</p>
+                    <p *ngIf="this.data">Localisation : {{this.data[9].location}}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-md-6 col-lg-4 mb" >
+                <div class="card-body">
+                    <h5 *ngIf="this.data">{{this.data[10].name}}</h5>
+                    <p *ngIf="this.data">Note : {{this.data[10].note}}</p>
+                    <p *ngIf="this.data">Spécialité : {{this.data[10].specialty}}</p>
+                    <p *ngIf="this.data">Localisation : {{this.data[10].location}}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              
         </div>
+        
+        
+        
+        
     </div>
 </main>
