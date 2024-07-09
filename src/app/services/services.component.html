@@ -8,6 +8,9 @@
                 <div class="card-body">
                   <h5 *ngIf="this.data">{{this.data[2].name}}</h5>
                   <p *ngIf="this.data">Note : {{this.data[2].note}}</p>
+                  <div *ngIf="this.data">
+                    <app-star-rating [rating]="data[2].note " [readonly]="true"></app-star-rating>
+                  </div>
                   <p *ngIf="this.data">Spécialité : {{this.data[2].specialty}}</p>
                   <p *ngIf="this.data">Localisation : {{this.data[2].location}}</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -17,6 +20,9 @@
                 <div class="card-body">
                     <h5 *ngIf="this.data">{{this.data[5].name}}</h5>
                     <p *ngIf="this.data">Note : {{this.data[5].note}}</p>
+                    <div *ngIf="this.data">
+                      <app-star-rating [rating]="data[5].note " [readonly]="true"></app-star-rating>
+                    </div>
                     <p *ngIf="this.data">Spécialité : {{this.data[5].specialty}}</p>
                     <p *ngIf="this.data">Localisation : {{this.data[5].location}}</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -26,6 +32,9 @@
                 <div class="card-body">
                     <h5 *ngIf="this.data">{{this.data[7].name}}</h5>
                     <p *ngIf="this.data">Note : {{this.data[7].note}}</p>
+                    <div *ngIf="this.data">
+                      <app-star-rating [rating]="data[7].note " [readonly]="true"></app-star-rating>
+                    </div>
                     <p *ngIf="this.data">Spécialité : {{this.data[7].specialty}}</p>
                     <p *ngIf="this.data">Localisation : {{this.data[7].location}}</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -35,6 +44,9 @@
                 <div class="card-body">
                     <h5 *ngIf="this.data">{{this.data[13].name}}</h5>
                     <p *ngIf="this.data">Note : {{this.data[13].note}}</p>
+                    <div *ngIf="this.data">
+                      <app-star-rating [rating]="data[13].note " [readonly]="true"></app-star-rating>
+                    </div>
                     <p *ngIf="this.data">Spécialité : {{this.data[13].specialty}}</p>
                     <p *ngIf="this.data">Localisation : {{this.data[13].location}}</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -44,6 +56,9 @@
                 <div class="card-body">
                     <h5 *ngIf="this.data">{{this.data[14].name}}</h5>
                     <p *ngIf="this.data">Note : {{this.data[14].note}}</p>
+                    <div *ngIf="this.data">
+                      <app-star-rating [rating]="data[14].note " [readonly]="true"></app-star-rating>
+                    </div>
                     <p *ngIf="this.data">Spécialité : {{this.data[14].specialty}}</p>
                     <p *ngIf="this.data">Localisation : {{this.data[14].location}}</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -54,6 +69,9 @@
                 <div class="card-body">
                     <h5 *ngIf="this.data">{{this.data[16].name}}</h5>
                     <p *ngIf="this.data">Note : {{this.data[16].note}}</p>
+                    <div *ngIf="this.data">
+                      <app-star-rating [rating]="data[16].note " [readonly]="true"></app-star-rating>
+                    </div>
                     <p *ngIf="this.data">Spécialité : {{this.data[16].specialty}}</p>
                     <p *ngIf="this.data">Localisation : {{this.data[16].location}}</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>

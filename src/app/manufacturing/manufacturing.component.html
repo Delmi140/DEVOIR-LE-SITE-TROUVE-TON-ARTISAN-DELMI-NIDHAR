@@ -9,6 +9,9 @@
                 <div class="card-body">
                   <h5 *ngIf="this.data">{{this.data[1].name}}</h5>
                   <p *ngIf="this.data">Note : {{this.data[1].note}}</p>
+                  <div *ngIf="this.data">
+                    <app-star-rating [rating]="data[1].note " [readonly]="true"></app-star-rating>
+                  </div>
                   <p *ngIf="this.data">Spécialité : {{this.data[1].specialty}}</p>
                   <p *ngIf="this.data">Localisation : {{this.data[1].location}}</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -18,6 +21,9 @@
                 <div class="card-body">
                     <h5 *ngIf="this.data">{{this.data[4].name}}</h5>
                     <p *ngIf="this.data">Note : {{this.data[4].note}}</p>
+                    <div *ngIf="this.data">
+                      <app-star-rating [rating]="data[4].note " [readonly]="true"></app-star-rating>
+                    </div>
                     <p *ngIf="this.data">Spécialité : {{this.data[4].specialty}}</p>
                     <p *ngIf="this.data">Localisation : {{this.data[4].location}}</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -27,6 +33,9 @@
                 <div class="card-body">
                     <h5 *ngIf="this.data">{{this.data[15].name}}</h5>
                     <p *ngIf="this.data">Note : {{this.data[15].note}}</p>
+                    <div *ngIf="this.data">
+                      <app-star-rating [rating]="data[15].note " [readonly]="true"></app-star-rating>
+                    </div>
                     <p *ngIf="this.data">Spécialité : {{this.data[15].specialty}}</p>
                     <p *ngIf="this.data">Localisation : {{this.data[15].location}}</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,7 @@ import { BuildingComponent } from './building/building.component';
 import { ServicesComponent } from './services/services.component';
 import { ManufacturingComponent } from './manufacturing/manufacturing.component';
 import { FoodComponent } from './food/food.component';
+import { StarRatingComponent } from './star-rating/star-rating.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,16 @@ import { FoodComponent } from './food/food.component';
     BuildingComponent,
     ServicesComponent,
     ManufacturingComponent,
-    FoodComponent
+    FoodComponent,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule,
+    
+    
   ],
   providers: [
     provideClientHydration()
