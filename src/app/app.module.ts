@@ -14,6 +14,7 @@ import { ServicesComponent } from './services/services.component';
 import { ManufacturingComponent } from './manufacturing/manufacturing.component';
 import { FoodComponent } from './food/food.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
     ServicesComponent,
     ManufacturingComponent,
     FoodComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

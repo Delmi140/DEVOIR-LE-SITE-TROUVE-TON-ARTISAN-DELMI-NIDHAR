@@ -9,11 +9,22 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ManufacturingComponent implements OnInit{
 
+
   data: any ;
+
+  datas: any [] = [];
 
   url = '../../assets/datas.json'
 
-  constructor(private http: HttpClient){
+  constructor(private http: HttpClient , private dataService: DataService){
+   
+    this.dataService.getJsonData().subscribe((res: any) => {
+      this.datas = res;
+     
+    })
+
+
+    
     
     
   }
@@ -22,12 +33,9 @@ export class ManufacturingComponent implements OnInit{
     this.http.get<any>(this.url).subscribe(res =>{
       this.data = res;
       this.data[0]
-    
+   
 
-      
-      
     })
   }
 
 }
-
