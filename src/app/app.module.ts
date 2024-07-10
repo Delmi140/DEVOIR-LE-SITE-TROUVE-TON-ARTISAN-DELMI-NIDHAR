@@ -17,6 +17,7 @@ import { FoodComponent } from './food/food.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { FilterPipe } from './filter.pipe';
 import { FilterSearchPipe } from './filter-search.pipe';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FilterSearchPipe } from './filter-search.pipe';
     FoodComponent,
     StarRatingComponent,
     FilterPipe,
-    FilterSearchPipe
+    FilterSearchPipe,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

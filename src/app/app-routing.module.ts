@@ -6,13 +6,15 @@ import { BuildingComponent } from './building/building.component';
 import { ServicesComponent } from './services/services.component';
 import { ManufacturingComponent } from './manufacturing/manufacturing.component';
 import { FoodComponent } from './food/food.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {path: "" , component: HomeComponent },
   {path: "building", component:BuildingComponent },
   {path: "services", component: ServicesComponent },
   {path: "manufacturing", component: ManufacturingComponent },
-  {path: "food", component: FoodComponent}
+  {path: "food", component: FoodComponent},
+  {path:"**", component:NotFoundComponent}
 ];
 
 @NgModule({
