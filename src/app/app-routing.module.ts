@@ -15,8 +15,8 @@ const routes: Routes = [
   {path: "services", component: ServicesComponent },
   {path: "manufacturing", component: ManufacturingComponent },
   {path: "food", component: FoodComponent},
- 
-  {path:"artisan/:id",component:ArtisanComponent }
+  {path:"artisan/:id",component:ArtisanComponent },
+  {path:"**" , component:NotFoundComponent}
 ];
 
 @NgModule({

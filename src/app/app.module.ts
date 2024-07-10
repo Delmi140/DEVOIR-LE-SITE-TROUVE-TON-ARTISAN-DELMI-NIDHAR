@@ -19,6 +19,7 @@ import { FilterPipe } from './filter.pipe';
 import { FilterSearchPipe } from './filter-search.pipe';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ArtisanComponent } from './artisan/artisan.component';
+import { SortByNotePipe } from './sort-by-note.pipe';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ArtisanComponent } from './artisan/artisan.component';
     FilterPipe,
     FilterSearchPipe,
     NotFoundComponent,
-    ArtisanComponent
+    ArtisanComponent,
+    SortByNotePipe
   ],
   imports: [
     BrowserModule,
