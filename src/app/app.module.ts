@@ -18,6 +18,7 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
 import { FilterPipe } from './filter.pipe';
 import { FilterSearchPipe } from './filter-search.pipe';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ArtisanComponent } from './artisan/artisan.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     StarRatingComponent,
     FilterPipe,
     FilterSearchPipe,
-    NotFoundComponent
+    NotFoundComponent,
+    ArtisanComponent
   ],
   imports: [
     BrowserModule,

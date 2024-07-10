@@ -7,6 +7,7 @@ import { ServicesComponent } from './services/services.component';
 import { ManufacturingComponent } from './manufacturing/manufacturing.component';
 import { FoodComponent } from './food/food.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ArtisanComponent } from './artisan/artisan.component';
 
 const routes: Routes = [
   {path: "" , component: HomeComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: "services", component: ServicesComponent },
   {path: "manufacturing", component: ManufacturingComponent },
   {path: "food", component: FoodComponent},
-  {path:"**", component:NotFoundComponent}
+ 
+  {path:"artisan/:id",component:ArtisanComponent }
 ];
 
 @NgModule({
