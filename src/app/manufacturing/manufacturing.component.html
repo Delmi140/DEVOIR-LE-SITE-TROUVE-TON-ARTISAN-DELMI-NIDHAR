@@ -6,11 +6,16 @@
         </div>
 
 
+        <div>
+          <input type="text" [(ngModel)]="Filtername">
+        </div>
+
+
 
         <div class="produits">
           <div class="container">
               <div class="row ">
-                <ng-container *ngFor="let product of datas | filter:'Fabrication':'category'" >
+                <ng-container *ngFor="let product of datas | filter:'Fabrication':'category'|filterSearch:Filtername" >
                   <div class="card col-md-6 col-lg-4 mb-">
                     <h5>{{product.name}}</h5>
                     <p>Note : {{product.note}}</p>
@@ -31,45 +36,6 @@
 
 
 
-        <div class=" row justify-content-center ">
-            <div class="card col-md-6 col-lg-4 mb" >
-                <div class="card-body">
-                  <h5 *ngIf="this.data">{{this.data[1].name}}</h5>
-                  <p *ngIf="this.data">Note : {{this.data[1].note}}</p>
-                  <div *ngIf="this.data">
-                    <app-star-rating [rating]="data[1].note " [readonly]="true"></app-star-rating>
-                  </div>
-                  <p *ngIf="this.data">Spécialité : {{this.data[1].specialty}}</p>
-                  <p *ngIf="this.data">Localisation : {{this.data[1].location}}</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-md-6 col-lg-4 mb" >
-                <div class="card-body">
-                    <h5 *ngIf="this.data">{{this.data[4].name}}</h5>
-                    <p *ngIf="this.data">Note : {{this.data[4].note}}</p>
-                    <div *ngIf="this.data">
-                      <app-star-rating [rating]="data[4].note " [readonly]="true"></app-star-rating>
-                    </div>
-                    <p *ngIf="this.data">Spécialité : {{this.data[4].specialty}}</p>
-                    <p *ngIf="this.data">Localisation : {{this.data[4].location}}</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-md-6 col-lg-4 mb" >
-                <div class="card-body">
-                    <h5 *ngIf="this.data">{{this.data[15].name}}</h5>
-                    <p *ngIf="this.data">Note : {{this.data[15].note}}</p>
-                    <div *ngIf="this.data">
-                      <app-star-rating [rating]="data[15].note " [readonly]="true"></app-star-rating>
-                    </div>
-                    <p *ngIf="this.data">Spécialité : {{this.data[15].specialty}}</p>
-                    <p *ngIf="this.data">Localisation : {{this.data[15].location}}</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              
-        </div>
-
+        
     </div>
 </main>

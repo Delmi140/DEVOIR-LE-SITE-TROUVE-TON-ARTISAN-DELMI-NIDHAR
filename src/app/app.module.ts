@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +16,7 @@ import { ManufacturingComponent } from './manufacturing/manufacturing.component'
 import { FoodComponent } from './food/food.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { FilterPipe } from './filter.pipe';
+import { FilterSearchPipe } from './filter-search.pipe';
 
 @NgModule({
   declarations: [
@@ -27,13 +29,15 @@ import { FilterPipe } from './filter.pipe';
     ManufacturingComponent,
     FoodComponent,
     StarRatingComponent,
-    FilterPipe
+    FilterPipe,
+    FilterSearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule,
+    FormsModule,
     
     
   ],

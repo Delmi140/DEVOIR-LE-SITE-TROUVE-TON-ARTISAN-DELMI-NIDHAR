@@ -4,12 +4,16 @@
         <div>
             <h2>Catégorie Alimentation</h2>
         </div>
+
+        <div>
+          <input type="text" [(ngModel)]="Filtername">
+        </div>
         
 
         <div class="produits">
           <div class="container">
               <div class="row ">
-                <ng-container *ngFor="let product of datas | filter:'Alimentation':'category'" >
+                <ng-container *ngFor="let product of datas | filter:'Alimentation':'category'| filterSearch:Filtername " >
                   <div class="card col-md-6 col-lg-4 mb-">
                     <h5>{{product.name}}</h5>
                     <p>Note : {{product.note}}</p>
@@ -29,47 +33,6 @@
 
 
 
-        <div  *ngIf="this.data" class=" row justify-content-center ">
-          <div class="card col-md-6 col-lg-4 mb" >
-              <div class="card-body">
-                <h5>{{data[3].name}}</h5>
-                <p >Note : {{data[3].note}}</p>
-                <div>
-                  <app-star-rating [rating]="data[3].note " [readonly]="true"></app-star-rating>
-                </div>
-                <p >Spécialité : {{data[3].specialty}}</p>
-                <p >Localisation : {{data[3].location}}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card col-md-6 col-lg-4 mb" >
-              <div class="card-body">
-                  <h5 >{{data[9].name}}</h5>
-                  <p >Note : {{data[9].note}}</p>
-                  <div >
-                    <app-star-rating [rating]="data[9].note " [readonly]="true"></app-star-rating>
-                  </div>
-                  <p >Spécialité : {{data[9].specialty}}</p>
-                  <p >Localisation : {{data[9].location}}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card col-md-6 col-lg-4 mb" >
-              <div class="card-body">
-                  <h5 >{{data[10].name}}</h5>
-                  <p >Note : {{data[10].note}}</p>
-                  <div >
-                    <app-star-rating [rating]="data[10].note " [readonly]="true"></app-star-rating>
-                  </div>
-                  <p >Spécialité : {{data[10].specialty}}</p>
-                  <p >Localisation : {{data[10].location}}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            
-            
-      </div>
-        
         
         
         

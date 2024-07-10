@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ServicesComponent implements OnInit{
 
+  Filtername: string ='';
 
   data: any ;
 

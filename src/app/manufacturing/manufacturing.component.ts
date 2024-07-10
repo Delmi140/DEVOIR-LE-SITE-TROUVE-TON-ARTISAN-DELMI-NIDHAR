@@ -9,6 +9,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ManufacturingComponent implements OnInit{
 
+  Filtername: string ='';
+
 
   data: any ;
 

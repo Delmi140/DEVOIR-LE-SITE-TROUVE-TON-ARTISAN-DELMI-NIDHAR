@@ -12,6 +12,12 @@ import { HttpClient } from '@angular/common/http';
 
 export class FoodComponent implements OnInit{
 
+  Filtername: string ='';
+
+  
+
+  
+
 
   data: any ;
 
