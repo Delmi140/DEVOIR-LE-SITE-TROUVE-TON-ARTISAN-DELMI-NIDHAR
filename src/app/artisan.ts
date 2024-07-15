@@ -4,6 +4,8 @@ export interface Iartisan {
     note: number;
     specialty: string;
     location:string;
+    about:string;
+    website:string;
 
 
 

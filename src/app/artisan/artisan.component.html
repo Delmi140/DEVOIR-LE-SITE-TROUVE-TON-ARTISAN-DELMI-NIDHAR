@@ -8,8 +8,14 @@
             <div *ngIf="artisan">
                 <p>{{artisan.id}}</p>
                 <p> {{artisan.name}}</p>
+                <p>Note : {{artisan.note}}</p>
+                <div>
+                <app-star-rating [rating]="artisan.note " [readonly]="true"></app-star-rating>
+                </div>
+                <p>Spécialité : {{artisan.specialty}}</p>
+                <p>Localisation : {{artisan.location}}</p>
+                <p>A propos : {{artisan.about}}</p>
                
-                
             </div>
             
             
@@ -43,6 +49,9 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                       </form>
+                </div>
+                <div>
+                    <p>Le site web de l'artisan : {{artisan.website}}</p>
                 </div>
             </div>
         </div>
