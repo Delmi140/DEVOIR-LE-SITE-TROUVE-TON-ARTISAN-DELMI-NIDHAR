@@ -4,11 +4,22 @@
             <div>
                 <h1 class="h1-mon-produit">Mon Artisan</h1>
             </div>
-            <div class="fiche-produit" >
-                {{productId}}
+            
+            <div *ngIf="artisan">
+                <p>{{artisan.id}}</p>
+                <p> {{artisan.name}}</p>
+               
                 
-              
             </div>
+            
+            
+            
+               
+                
+
+               
+          
+            
             <div>
                 <div class="h2-formulaire">
                     <h2 >Formulaire de Contact</h2>

@@ -3,6 +3,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -44,6 +45,13 @@ import { SortByNotePipe } from './sort-by-note.pipe';
     HttpClientModule,
     FontAwesomeModule,
     FormsModule,
+    RouterModule.forRoot([{path: "" , component: HomeComponent },
+      {path: 'building', component:BuildingComponent },
+      {path: 'services', component: ServicesComponent },
+      {path: 'manufacturing', component: ManufacturingComponent },
+      {path: 'food', component: FoodComponent},
+      {path:'artisan/:id',component:ArtisanComponent },
+      {path:'**' , component:NotFoundComponent}]),
     
     
   ],

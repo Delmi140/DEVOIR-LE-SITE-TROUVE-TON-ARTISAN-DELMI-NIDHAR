@@ -33,63 +33,23 @@
                 <h2>Les trois artisans du mois avec pour chacun :</h2>
             </div>
             
-            <div class=" row justify-content-center ">
-                <div class="card col-md-6 col-lg-4 mb" >
-                    <div class="card-body">
-                      <h5 *ngIf="this.data">{{this.data[8].name}}</h5>
-                      <p *ngIf="this.data">Note : {{this.data[8].note}}</p>
-                      <div *ngIf="this.data">
-                        <app-star-rating [rating]="data[8].note " [readonly]="true"></app-star-rating>
-                      </div>
-                      <p *ngIf="this.data">Spécialité : {{this.data[8].specialty}}</p>
-                      <p *ngIf="this.data">Localisation : {{this.data[8].location}}</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                  <div class="card col-md-6 col-lg-4 mb" >
-                    <div class="card-body">
-                        <h5 *ngIf="this.data">{{this.data[15].name}}</h5>
-                        <p *ngIf="this.data">Note : {{this.data[15].note}}</p>
-                        <div *ngIf="this.data">
-                          <app-star-rating [rating]="data[15].note "  [readonly]="true"></app-star-rating>
-                        </div>
-                        <p *ngIf="this.data">Spécialité : {{this.data[15].specialty}}</p>
-                        <p *ngIf="this.data">Localisation : {{this.data[15].location}}</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                  <div class="card col-md-6 col-lg-4 mb" >
-                    <div class="card-body">
-                        <h5 *ngIf="this.data">{{this.data[3].name}}</h5>
-                        <p *ngIf="this.data">Note : {{this.data[3].note}}</p>
-                        <div *ngIf="this.data">
-                          <app-star-rating [rating]="data[3].note " [readonly]="true"></app-star-rating>
-                        </div>
-                        <p *ngIf="this.data">Spécialité : {{this.data[3].specialty}}</p>
-                        <p *ngIf="this.data">Localisation : {{this.data[3].location}}</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-            </div>
-
-
+            
 
             <div class="produits">
               <div class="container">
                   <div class="row ">
-                    <ng-container *ngFor="let product of (datas | sortByNote | slice:0:3) " >
+                    <ng-container *ngFor="let artisan of (datas | sortByNote | slice:0:3) " >
                       <div class="card col-md-6 col-lg-4 mb-">
-                        <h5>{{product.name}}</h5>
-                        <p>Note : {{product.note}}</p>
+                        <h5>{{artisan.name}}</h5>
+                        <p>Note : {{artisan.note}}</p>
                         <div>
-                          <app-star-rating [rating]="product.note " [readonly]="true"></app-star-rating>
+                          <app-star-rating [rating]="artisan.note " [readonly]="true"></app-star-rating>
                         </div>
-                        <p>Spécialité : {{product.specialty}}</p>
-                        <p>Localisation : {{product.location}}</p>
-                        
-    
-                        <a class="nav-link" routerLink="/artisan/ {{product.name}}"><button type="button" class="btn btn-primary">Voir l'artisan</button>
-                        </a>
+                        <p>Spécialité : {{artisan.specialty}}</p>
+                        <p>Localisation : {{artisan.location}}</p>
+                        <a class="nav-link" [routerLink]="['artisan/',artisan.id]"><button type="button" class="btn btn-primary">Voir l'artisan</button> </a>
+                        <div>
+                        </div>
                       </div>
                     </ng-container>
                   </div>
@@ -101,3 +61,5 @@
         </div>
     </div>
 </main>
+
+<router-outlet></router-outlet>

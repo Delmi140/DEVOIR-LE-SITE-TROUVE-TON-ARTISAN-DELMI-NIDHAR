@@ -1,5 +1,7 @@
 import { Component ,OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { DataService } from '../data.service';
+import { Iartisan } from '../artisan';
 
 @Component({
   selector: 'app-artisan',
@@ -7,15 +9,37 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './artisan.component.scss'
 })
 export class ArtisanComponent implements OnInit{
+
   productId: any;
+
+  public artisan: any  = <Iartisan> {};
+
  
+
+
+
+
   
   
  
- constructor(private activated: ActivatedRoute,) {}
+ constructor(private activated: ActivatedRoute,private dataService: DataService) {}
  
  ngOnInit(): void {
-   this.productId = this.activated.snapshot.paramMap.get('id')
+   this.productId = this.activated.snapshot.paramMap.get('id');
+
+   this.dataService.getArtisans().subscribe((artisans:Iartisan [])=>{
+    this.artisan = artisans.find(artisan => artisan.id == this.productId);
+
+   })
+   
+   
+
+   
+
+
+
+   
+
  
  }
 }

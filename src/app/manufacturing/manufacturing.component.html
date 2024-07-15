@@ -15,22 +15,24 @@
         <div class="produits">
           <div class="container">
               <div class="row ">
-                <ng-container *ngFor="let product of datas | filter:'Fabrication':'category'|filterSearch:Filtername" >
+                <ng-container *ngFor="let artisan of datas | filter:'Fabrication':'category'| filterSearch:Filtername "  >
                   <div class="card col-md-6 col-lg-4 mb-">
-                    <h5>{{product.name}}</h5>
-                    <p>Note : {{product.note}}</p>
+                    <h5>{{artisan.name}}</h5>
+                    <p>Note : {{artisan.note}}</p>
                     <div>
-                      <app-star-rating [rating]="product.note " [readonly]="true"></app-star-rating>
+                      <app-star-rating [rating]="artisan.note " [readonly]="true"></app-star-rating>
                     </div>
-                    <p>Spécialité : {{product.specialty}}</p>
-                    <p>Localisation : {{product.location}}</p>
-                    <a class="nav-link" routerLink="/artisan/ {{product.name}}"><button type="button" class="btn btn-primary">Voir l'artisan</button>
-                    </a>                    
+                    <p>Spécialité : {{artisan.specialty}}</p>
+                    <p>Localisation : {{artisan.location}}</p>
+                    <a class="nav-link" [routerLink]="['/artisan/',artisan.id]"><button type="button" class="btn btn-primary">Voir l'artisan</button> </a>
+                    <div>
+                    </div>
                   </div>
                 </ng-container>
               </div>
             </div>
       </div>
+
 
 
 
