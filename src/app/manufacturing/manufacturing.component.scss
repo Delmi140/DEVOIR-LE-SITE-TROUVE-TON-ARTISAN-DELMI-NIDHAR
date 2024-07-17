@@ -7,13 +7,43 @@
   }
 
 .manufacturing-conternaire{
-    text-align: center;
+    background-color:#f1f8fc ;
 }
 
 h2{
     font-family: "Graphik";
+    color: #00497c;
+    font-size:2.5rem;
+}
+.h2-titre{
+    padding-top: 20px;
+  padding-left: 20px;
+}
+h5{
+    font-family: "Graphik";
+    color: #00497c;
+
+}
+p{
+    color: #384050;
+    font-family: "Graphik";
+}
+.p-tir{
+    background-color: #0074c7;
+    width: 50px;
+    height: 10px;
 }
 .card{
     margin: 20px;
     width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
+.produits{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .btn{
+      background-color: #0074c7;
+  }

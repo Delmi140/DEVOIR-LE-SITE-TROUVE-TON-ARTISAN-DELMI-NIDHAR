@@ -1,23 +1,38 @@
 <main>
     <div class="fiche-produit-generale">
-        <div class="fiche-produit-contenaire">
-            <div>
-                <h1 class="h1-mon-produit">Mon Artisan</h1>
-            </div>
-            
-            <div *ngIf="artisan">
-                <p>{{artisan.id}}</p>
-                <p> {{artisan.name}}</p>
-                <p>Note : {{artisan.note}}</p>
-                <div>
-                <app-star-rating [rating]="artisan.note " [readonly]="true"></app-star-rating>
+        <div >
+            <div class="fiche-produit-contenaire">
+                <div class="h2-titre">
+                    <p class="p-tir" ></p>
+                    <h2 ><strong>Mon Artisan</strong></h2>
                 </div>
-                <p>Spécialité : {{artisan.specialty}}</p>
-                <p>Localisation : {{artisan.location}}</p>
-                <p>A propos : {{artisan.about}}</p>
-               
+                
+                
+                <div>
+                    
+
+                </div>
+                <div class="card-contenaire">
+                    <div  class="card" style="width: 18rem; ">
+                        
+                        <div *ngIf="artisan" class="card-body">
+                          <h5 class="card-title"><strong>{{artisan.name}}</strong></h5>
+                          <p> {{artisan.name}}</p>
+                          <p>Note : {{artisan.note}}</p>
+                          <div>
+                           <app-star-rating [rating]="artisan.note " [readonly]="true"></app-star-rating>
+                          </div>
+                          <p>Spécialité : {{artisan.specialty}}</p>
+                          <p>Localisation : {{artisan.location}}</p>
+                          <p>A propos : {{artisan.about}}</p>
+                   
+                          
+                        </div>
+                      </div>
+
+                </div>
+                
             </div>
-            
             
             
                
@@ -27,8 +42,9 @@
           
             
             <div>
-                <div class="h2-formulaire">
-                    <h2 >Formulaire de Contact</h2>
+                <div class="h2-titre">
+                    <p class="p-tir-contact" ></p>
+                    <h2><strong>Formulaire de Contact</strong></h2>
 
                 </div>
                 <div class="formulaire">
@@ -47,11 +63,12 @@
                             <label for="exampleFormControlTextarea1">Message</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
                       </form>
                 </div>
-                <div>
-                    <p>Le site web de l'artisan : {{artisan.website}}</p>
+                <div *ngIf="artisan" class="p-web">
+                    <h6>Le site web de l'artisan :</h6>
+                    <p class="p-lien"><strong>{{artisan.website}}</strong></p>
                 </div>
             </div>
         </div>

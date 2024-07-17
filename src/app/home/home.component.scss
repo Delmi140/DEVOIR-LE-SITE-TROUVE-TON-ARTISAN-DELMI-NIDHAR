@@ -8,21 +8,94 @@
 
 
 
-.home-contenaire{
-    text-align: center;
-}
 
 h1{
     font-family: "Graphik";
+    color: #00497c;
+    font-size: 5rem;
+}
+.h1-titre{
+    margin: 50px;
 }
 h2{
     font-family: "Graphik";
+    color: #00497c;
+    font-size:2.5rem;
+}
+.h2-titre{
+    margin: 50px;
+}
+.h2-titre-top{
+    background-color: #cd2c2e;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    width: 400Px;
+    margin-left: 50px;
+
+}
+
+
+.h2-top{
+    color: white;
+    font-size:2.5rem;
+    padding-top: 20px;
+    padding-left: 50px;
+    font-family: "Graphik";
+}
+h4{
+    font-family: "Graphik";
+    color: #00497c;
+}
+h5{
+    font-family: "Graphik";
+    color: #00497c;
 }
 
 li{
     font-family: "Graphik";
 }
+p{
+    color: #384050;
+    font-family: "Graphik";
+}
 .card{
     margin: 20px;
     width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+.etape{
+    border: solid 1px black;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 40px;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+.produits{
+    text-align: center;
+    padding-bottom: 50px;
+  padding-top: 50px
+}
+.top-produits{
+    background-color: #f1f8fc;
+   
+}
+.btn{
+    background-color: #0074c7;
+}
+.p-tir{
+    background-color: #82b864;
+    width: 50px;
+    height: 10px;
+}
+.p-tir-top{
+    background-color:white;
+    width: 50px;
+    height: 10px;
+    margin: 50px;
+    margin-bottom: 0px;
+    
+}
+

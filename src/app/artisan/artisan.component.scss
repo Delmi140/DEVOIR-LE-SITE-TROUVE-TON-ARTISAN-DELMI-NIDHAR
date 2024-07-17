@@ -12,7 +12,31 @@
 
   h2{
     font-family: "Graphik";
-  }
+    color: #00497c;
+    font-size:2.5rem;
+}
+.h2-titre{
+  padding-top: 20px;
+padding-left: 20px;
+}
+h5{
+  font-family: "Graphik";
+  color: #00497c;
+
+}
+h6{
+  font-family: "Graphik";
+  color: #00497c;
+}
+ .p-tir{
+  background-color: #0074c7;
+  width: 50px;
+  height: 10px;
+}
+p{
+  color: #384050;
+  font-family: "Graphik";
+}
 
   .formulaire{
    
@@ -20,9 +44,31 @@
     justify-content: center;
   }
 
-  .h2-formulaire{
-    text-align: center;
+  
+  .fiche-produit-contenaire{
+    background-color:#f1f8fc ;
   }
+  .card-contenaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 50px;
+  }
+  .p-web{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .p-tir-contact{
+    background-color: #82b864;
+    width: 50px;
+    height: 10px;
+  }
+  .p-lien{
+    font-family: "Graphik";
+    color: #00497c;
+  }
+  
 
 
 

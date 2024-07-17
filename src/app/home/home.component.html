@@ -1,46 +1,53 @@
 <main>
     <div class="home-contenaire">
-        <div>
-            <h1>Trouver Ton Artisan</h1>
+        <div class="h1-titre">
+          
+            <h1><strong>Trouver Ton Artisan</strong></h1>
         </div>
         <div>
-            <h2>Comment trouver mon artisan ?</h2>
-            <div>
-              <div>
-                <h4>ÉTAPE 1</h4>
-                <h5>Choix de la catégorie de l’artisan </h5>
+            <div class="h2-titre">
+              <p class="p-tir" ></p>
+              <h2><strong>Comment trouver mon artisan ?</strong></h2>
+            </div>
+            <div class="row justify-content-center">
+              <article class="etape col-md-6 col-lg-6 mb-5">
+                <h4><strong>ÉTAPE 1</strong></h4>
+                <h5><strong>Choix de la catégorie de l’artisan</strong></h5>
                 <p>Sélectionnez l’une des 4 activités des artisans : Bâtiment, Services, Fabrication, Alimentation  </p>
-              </div>
-              <div>
-                <h4>ÉTAPE 2</h4>
-                <h5>Sélection de mon artisan</h5>
+              </article>
+              <article class=" etape col-md-6 col-lg-6 mb-5">
+                <h4><strong>ÉTAPE 2</strong></h4>
+                <h5><strong>Sélection de mon artisan</strong></h5>
                 <p>Consultez les profils de nos artisans et sélectionnez l’expert de proximité pour votre projet </p>
-              </div>
-              <div>
-                <h4>ÉTAPE 3</h4>
-                <h5>Formulaire de contact</h5>
+              </article>
+              <article class="etape col-md-6 col-lg-6 mb-5">
+                <h4><strong>ÉTAPE 3</strong></h4>
+                <h5><strong>Formulaire de contact</strong></h5>
                 <p>Précisez votre projet avec autant d’informations que possible et complétez vos coordonnées pour recevoir votre devis personnalisé. </p>
-              </div>
-              <div>
-                <h4>ÉTAPE 4</h4>
-                <h5>Une réponse sous 48h</h5>
+              </article>
+              <article class="etape col-md-6 col-lg-6 mb-5">
+                <h4><strong>ÉTAPE 4</strong></h4>
+                <h5><strong>Une réponse sous 48h </strong></h5>
                 <p>Vous réceptionnez sur votre boîte mail un devis détaillé dans un délai de 48h maximum</p>
-              </div>
-            </div>
-        </div>
-        <div>
-            <div>
-                <h2>Les trois artisans du mois avec pour chacun :</h2>
-            </div>
-            
-            
+              </article>
 
+            </div>
+            
+      
+        </div>
+        
+          <div class="top-produits">
+            <div class="h2-titre-top">
+                <p class="p-tir-top" ></p>
+                <h2 class="h2-top"><strong>Les trois artisans du mois  :</strong></h2>
+            </div>
+            
             <div class="produits">
               <div class="container">
                   <div class="row ">
                     <ng-container *ngFor="let artisan of (datas | sortByNote | slice:0:3) " >
-                      <div class="card col-md-6 col-lg-4 mb-">
-                        <h5>{{artisan.name}}</h5>
+                      <div class="card col-md-6 col-lg-4 mb-5">
+                        <h5><strong>{{artisan.name}}</strong></h5>
                         <p>Note : {{artisan.note}}</p>
                         <div>
                           <app-star-rating [rating]="artisan.note " [readonly]="true"></app-star-rating>
@@ -59,6 +66,7 @@
             
             
         </div>
+       
     </div>
 </main>
 
