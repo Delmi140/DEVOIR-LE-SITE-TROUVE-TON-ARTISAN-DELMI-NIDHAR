@@ -22,7 +22,7 @@
           </li>
         </ul>
         <div>
-          <input type="text" [(ngModel)]="Filternames">
+          <input type="text" [(ngModel)]="Filtername" (keyup)="searchName(Filtername)">
         </div>
       </div>
     </div>

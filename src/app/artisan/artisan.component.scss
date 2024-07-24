@@ -39,6 +39,7 @@ p{
 }
 
   .formulaire{
+    
    
     display: flex;
     justify-content: center;
@@ -68,7 +69,14 @@ p{
     font-family: "Graphik";
     color: #00497c;
   }
-  
+  form{
+    border: solid #00497c 1px;
+    border-radius: 8%;
+   padding: 30px;
+  }
+  #message-contenaire{
+    margin-top: 50px;
+  }
 
 
 

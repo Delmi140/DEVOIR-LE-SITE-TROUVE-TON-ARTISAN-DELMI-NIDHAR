@@ -36,7 +36,10 @@ export class ManufacturingComponent implements OnInit{
   }
   ngOnInit(): void {
 
-   this.dataService.getArtisans().subscribe(data =>(this.datas = data))
+   this.dataService.getArtisans().subscribe(data =>(this.datas = data));
+   this.dataService.searchSubject.subscribe((searchString:any) => {
+    this.Filtername = searchString;
+   })
     
     
   }
