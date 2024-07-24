@@ -10,7 +10,7 @@ export class FilterSearchPipe  implements PipeTransform {
       return artisans;
     }
     return artisans.filter((artisan:any) => {
-      return artisan.name.toLowerCase().includes(Filtername.toLowerCase())
+      return artisan.name.toLowerCase().includes(Filtername.toLowerCase()) || artisan.location.toLowerCase().includes(Filtername.toLowerCase()) || artisan.specialty.toLowerCase().includes(Filtername.toLowerCase());
     })
     
   }
