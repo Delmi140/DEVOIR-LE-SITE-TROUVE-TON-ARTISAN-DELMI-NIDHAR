@@ -6,14 +6,7 @@
       
   }
 
-.footer-contenaire{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #0074c7 ;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+
 h3{
     color: white;
     font-family: "Graphik";
@@ -30,4 +23,11 @@ ul{
 a{
     color: white;
     font-family: "Graphik";
+}
+footer{
+    background-color: #0074c7 ;
+}
+#footer-adresse{
+    background-color: #0074c7 ;
+    padding-top: 30px;
 }

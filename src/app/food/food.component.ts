@@ -1,6 +1,6 @@
 import { Component,OnInit, } from '@angular/core';
 import { DataService } from '../data.service';
-import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-food',
@@ -26,7 +26,7 @@ export class FoodComponent implements OnInit{
 
 
 
-  constructor(private http: HttpClient , private dataService: DataService){
+  constructor(  private dataService: DataService){
 
     
    

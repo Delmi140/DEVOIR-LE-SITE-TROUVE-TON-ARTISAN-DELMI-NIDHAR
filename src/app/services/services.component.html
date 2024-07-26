@@ -13,7 +13,7 @@
 
         <div class="produits">
           <div class="container">
-              <div class="row ">
+              <div class="row justify-content-center" >
                 <ng-container *ngFor="let artisan of datas | filter:'Services':'category'| filterSearch:Filtername "  >
                   <div class="card col-md-6 col-lg-4 mb-">
                     <h5><strong>{{artisan.name}}</strong></h5>
