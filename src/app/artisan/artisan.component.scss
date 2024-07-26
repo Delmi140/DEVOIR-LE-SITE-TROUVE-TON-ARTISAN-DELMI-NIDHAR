@@ -67,16 +67,36 @@ p{
   }
   .p-lien{
     font-family: "Graphik";
-    color: #00497c;
+    color: #82b864 ;
   }
   form{
     border: solid #00497c 1px;
     border-radius: 8%;
    padding: 30px;
+   border: solid #0074c7 1px;
   }
   #message-contenaire{
     margin-top: 50px;
   }
+  .card{
+    border: solid #0074c7 1px;
+
+  }
+  input{
+    border: solid #0074c7 1px;
+  }
+  textarea{
+    border: solid #0074c7 1px;
+  }
+  .btn{
+    background-color: #0074c7;
+  }
+
+.form-label{
+  color: #384050;
+  font-family: "Graphik";
+}
+
 
 
 

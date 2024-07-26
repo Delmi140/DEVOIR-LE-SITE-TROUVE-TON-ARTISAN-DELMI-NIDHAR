@@ -28,7 +28,7 @@ export class ArtisanComponent implements OnInit{
    this.productId = this.activated.snapshot.paramMap.get('id');
 
    this.dataService.getArtisans().subscribe((artisans:Iartisan [])=>{
-    this.artisan = artisans.find(artisan => artisan.id == this.productId);
+    this.artisan = artisans.find(artisan => artisan.id === this.productId);
 
    })
    

@@ -63,16 +63,9 @@ p{
     width: 400px;
     padding-top: 20px;
     padding-bottom: 20px;
+    border: solid #0074c7 1px;
 }
-.etape{
-    border: solid 1px black;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-top: 40px;
-    width: 400px;
-    height: 200px;
-    text-align: center;
-}
+
 .produits{
     text-align: center;
     padding-bottom: 50px;
@@ -100,8 +93,9 @@ p{
     
 }
 
-#etape-contenaire{
- padding-top: 50px;
-  padding-bottom: 50px;
+
+#card-etape{
+    border: solid #0074c7 1px;
+    text-align: center;
 }
 
