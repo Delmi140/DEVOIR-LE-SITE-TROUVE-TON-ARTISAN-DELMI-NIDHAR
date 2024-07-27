@@ -1,0 +1,101 @@
+<main>
+    <div class="fiche-produit-generale">
+        <div >
+            <div class="fiche-produit-contenaire">
+                <div class="h2-titre">
+                    <p class="p-tir" ></p>
+                    <h2 ><strong>Mon Artisan</strong></h2>
+                </div>
+                
+                
+                <div>
+                    
+
+                </div>
+                <div class="card-contenaire">
+                    <div  class="card" style="width: 18rem; ">
+
+                        @if (artisan) {
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>{{artisan.name}}</strong></h5>
+                                <p> {{artisan.name}}</p>
+                                <p>Note : {{artisan.note}}</p>
+                                <div>
+                                 <app-star-rating [rating]="artisan.note " [readonly]="true"></app-star-rating>
+                                </div>
+                                <p>Spécialité : {{artisan.specialty}}</p>
+                                <p>Localisation : {{artisan.location}}</p>
+                                <p>A propos : {{artisan.about}}</p>
+                            </div>
+
+
+                        }
+                        
+                        <!-- <div *ngIf="artisan" class="card-body">
+                          <h5 class="card-title"><strong>{{artisan.name}}</strong></h5>
+                          <p> {{artisan.name}}</p>
+                          <p>Note : {{artisan.note}}</p>
+                          <div>
+                           <app-star-rating [rating]="artisan.note " [readonly]="true"></app-star-rating>
+                          </div>
+                          <p>Spécialité : {{artisan.specialty}}</p>
+                          <p>Localisation : {{artisan.location}}</p>
+                          <p>A propos : {{artisan.about}}</p>
+                   
+                          
+                        </div> -->
+                      </div>
+
+                </div>
+                
+            </div>
+            
+            
+               
+                
+
+               
+          
+            
+            <div>
+                <div class="h2-titre">
+                    <p class="p-tir-contact" ></p>
+                    <h2><strong>Formulaire de Contact</strong></h2>
+
+                </div>
+                <div class="formulaire" (submit)="createPost()" >
+                    <form class="row col-6 m-5">
+                        <div class="col-6">
+                            <label for="exampleInputEmail1" class="form-label">Nom</label>
+                            <input [(ngModel)]="postData.Nom"  name="Non"  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom">
+                            <small id="emailHelp" class="form-text text-muted"></small>
+                          </div>
+                        <div class="col-6">
+                            <label for="exampleInputEmail1" class="form-label" >Objet</label>
+                            <input [(ngModel)]="postData.Objet" name="Objet" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Objet">
+                            <small id="emailHelp" class="form-text text-muted"></small>
+                          </div>
+                        <div class="mb-3" id="message-contenaire">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea [(ngModel)]="postData.Message" name="Message"  class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+
+                        </div>
+                        
+                      </form>
+                </div>
+
+
+
+                <div *ngIf="artisan" class="p-web">
+                    <h6>Le site web de l'artisan :</h6>
+                    <p class="p-lien"><strong>{{artisan.website}}</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</main>

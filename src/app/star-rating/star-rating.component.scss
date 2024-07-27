@@ -1,0 +1,41 @@
+
+
+#container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+
+
+    fa-icon{
+        color: #f1f8fc;
+        font-size: 24px;
+        cursor: pointer;
+    
+        &.rated,
+        &:hover, 
+        &:hover ~ fa-icon {
+            color:#82b864 ;
+        }
+    
+        transition: color 0.2s ease-in-out;
+    
+    
+
+
+    }
+
+    &.readOnly{
+        fa-icon {
+            cursor: default;
+            &:hover:not(.rated), &:hover ~ fa-icon:not(.rated) {
+                color: #f1f8fc;
+            }
+        }
+
+    }
+}
+
+.star-container{
+    display: flex;
+    justify-content: center;
+}

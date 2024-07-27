@@ -1,10 +1,45 @@
 <main>
     <div class="services-conternaire">
-        <div>
-            <h2>Catégorie Services</h2>
+        <div class="h2-titre">
+          <p class="p-tir"></p>
+            <h2><strong>Catégorie Services </strong></h2>
         </div>
-        <div>
 
-        </div>
+
+        
+
+
+
+
+        <div class="produits">
+          <div class="container">
+              <div class="row justify-content-center" >
+                <ng-container *ngFor="let artisan of datas | filter:'Services':'category'| filterSearch:Filtername "  >
+                  <div class="card col-md-6 col-lg-4 mb-">
+                    <h5><strong>{{artisan.name}}</strong></h5>
+                    <p>Note : {{artisan.note}}</p>
+                    <div>
+                      <app-star-rating [rating]="artisan.note " [readonly]="true"></app-star-rating>
+                    </div>
+                    <p>Spécialité : {{artisan.specialty}}</p>
+                    <p>Localisation : {{artisan.location}}</p>
+                    <a class="nav-link" [routerLink]="['/artisan/',artisan.id]"><button type="button" class="btn btn-primary">Voir l'artisan</button> </a>
+                    <div>
+                    </div>
+                  </div>
+                </ng-container>
+              </div>
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+        
     </div>
 </main>
