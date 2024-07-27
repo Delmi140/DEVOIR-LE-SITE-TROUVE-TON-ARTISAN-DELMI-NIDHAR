@@ -63,21 +63,21 @@
                     <h2><strong>Formulaire de Contact</strong></h2>
 
                 </div>
-                <div class="formulaire">
+                <div class="formulaire" (submit)="createPost()" >
                     <form class="row col-6 m-5">
                         <div class="col-6">
                             <label for="exampleInputEmail1" class="form-label">Nom</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom">
+                            <input [(ngModel)]="postData.Nom"  name="Non"  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom">
                             <small id="emailHelp" class="form-text text-muted"></small>
                           </div>
                         <div class="col-6">
                             <label for="exampleInputEmail1" class="form-label" >Objet</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Objet">
+                            <input [(ngModel)]="postData.Objet" name="Objet" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Objet">
                             <small id="emailHelp" class="form-text text-muted"></small>
                           </div>
                         <div class="mb-3" id="message-contenaire">
                             <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea [(ngModel)]="postData.Message" name="Message"  class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div>
                             <button type="submit" class="btn btn-primary">Envoyer</button>
