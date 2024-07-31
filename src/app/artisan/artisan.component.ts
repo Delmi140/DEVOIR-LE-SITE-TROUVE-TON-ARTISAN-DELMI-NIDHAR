@@ -45,7 +45,7 @@ export class ArtisanComponent implements OnInit{
  createPost() {
   this.service.createPost(this.postData);
   alert('mail envoyé avec succès');
-  console.log(this.postData)
+ 
 
 }
 
