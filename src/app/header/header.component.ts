@@ -1,6 +1,8 @@
 import { Component , OnInit} from '@angular/core';
 import { DataService } from '../data.service';
 
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-header',
@@ -8,6 +10,9 @@ import { DataService } from '../data.service';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit{
+
+ 
+  faMagnifyingGlass = faMagnifyingGlass;
 
 
   Filtername: string ='';
