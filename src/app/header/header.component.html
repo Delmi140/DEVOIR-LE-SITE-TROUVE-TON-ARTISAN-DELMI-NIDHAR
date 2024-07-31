@@ -22,7 +22,10 @@
           </li>
         </ul>
         <div>
-          <input type="text" [(ngModel)]="Filtername" (keyup)="searchName(Filtername)">
+          <input type="text" [(ngModel)]="Filtername" (keyup)="searchName(Filtername)" placeholder="Rechercher">
+          <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+          
+          
         </div>
       </div>
     </div>
